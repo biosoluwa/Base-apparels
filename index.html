@@ -25,13 +25,17 @@
         </h1>
         <p>Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
-        <form action="">
-        <input type="email" placeholder="  Email Address">
-        <button><img src="images/icon-arrow.svg" alt=""></button>
+        <form action="" novalidate>
+          <div class="wrapper">
+            <input type="email" placeholder="Email Address" id="email-input" required>
+            <img src="images/icon-error.svg" class="error-icon hidden" id="error-icon" alt="">
+            <button><img src="images/icon-arrow.svg" alt=""></button>
+          </div>
+          <p id="hidden-text" class="hidden">Please provide a valid email</p>
         </form>
       </div>
    </div>
-  <img src="images/hero-desktop.jpg" class="hero-desktop" alt="">
+  <div class="hero-desktop"></div>
   
 <!--   
   <footer>
