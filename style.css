@@ -1,0 +1,109 @@
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .hero-desktop{
+        display: none;
+    }
+
+    *{
+        box-sizing: border-box;
+        font-family: "Josefin Sans", sans-serif;
+
+    }
+  
+    html, body{
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: "Josefin Sans", sans-serif;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .left-col{
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .logo{
+        width: 158px;
+        height: 33px;
+        margin: 50px;
+    }
+
+    .main-container{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span,
+    p{
+        color: hsl(0, 36%, 70%);
+        font-weight: normal;
+    }
+   
+    form{
+        width: 100%;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    input{
+        width: 100%;
+        height: 60px;
+        border-radius: 40px;
+        border: 2px solid hsl(0, 36%, 70%);
+    }
+    button{
+        background-color: hsl(0, 36%, 70%);
+        width: 80px;
+        height: 60px;
+        border: none;
+        border-radius: 40px;
+        position: absolute;
+        right: 2px;
+    }
+
+
+    @media(min-width: 768px){
+        body{
+            flex-direction: row;
+            text-align: left;
+            background-image: url(images/bg-pattern-desktop.svg);
+        }
+ 
+        h1{
+            font-size: 58px;
+        }
+
+        p{
+            font-size: 36px;
+        }
+        .left-col{
+            justify-content: space-around;
+        }
+
+        .main-container{
+            align-items: start;
+
+        }
+        .hero-mobile{
+            display: none;
+        }
+
+        .hero-desktop{
+            display: block;
+            height: 100vh;
+            width: 40%;
+        }
+
+    }
